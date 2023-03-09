@@ -28,7 +28,7 @@ class DashboardController extends Controller
     public function instance($id)
     {
         $instance = Auth::user()->instances()->findOrFail($id);
-        
+
         return view('instance', [
             'instance' => $instance
         ]);
